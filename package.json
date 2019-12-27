@@ -1,0 +1,47 @@
+{
+  "name": "js-amp",
+  "version": "0.0.1",
+  "description": "JavaScript Application Management Platform",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./scripts/index build",
+    "setup": "node ./scripts/index setup",
+    "start": "node ./scripts/index start",
+    "components:clean": "cd ./packages/components/ && npm run clean",
+    "components:compile": "cd ./packages/components/ && npm run compile",
+    "components:compile:watch": "cd ./packages/components/ && npm run compile:watch",
+    "components:docs": "cd ./packages/components/ && npm run docs",
+    "components:lint": "cd ./packages/components/ && npm run lint",
+    "components:test": "cd ./packages/components/ && npm run test",
+    "components:transpile": "cd ./packages/components/ && npm run transpile",
+    "components:transpile:watch": "cd ./packages/components/ && npm run transpile:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InteractiveTimmy/js-amp"
+  },
+  "author": "Timothy Scheuering",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InteractiveTimmy/js-amp/issues"
+  },
+  "homepage": "https://github.com/InteractiveTimmy/js-amp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@microsoft/api-extractor": "^7.3.7",
+    "@microsoft/tsdoc": "^0.12.10",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.13.0",
+    "jest": "^24.8.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.17.0",
+    "typescript": "^3.5.3"
+  }
+}

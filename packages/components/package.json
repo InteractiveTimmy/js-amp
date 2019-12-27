@@ -1,0 +1,30 @@
+{
+  "name": "@js-amp/components",
+  "version": "0.0.1",
+  "description": "JS-AMP Components",
+  "main": "./build/index.js",
+  "mainDev": "./dist/index.js",
+  "babel": {
+    "presets": [
+      ["@babel/preset-env", { "targets": { "node": "current" } }],
+      "@babel/preset-typescript"
+    ]
+  },
+  "scripts": {
+    "clean": "rimraf ./build ./dist ./docs",
+    "compile": "rollup -c ./rollup.config.js -n JSAmpComponents -o ./build/components.js",
+    "compile:watch": "rollup -c ./rollup.config.js -n JSAmpComponents -o ./build/components.js --watch",
+    "docs": "exit 0",
+    "lint": "eslint ./src/**",
+    "test": "jest",
+    "transpile": "tsc",
+    "transpile:watch": "tsc --watch"
+  },
+  "repository": "https://github.com/InteractiveTimmy/js-amp/packages/components",
+  "author": "Timothy Scheuering",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InteractiveTimmy/js-amp/issues"
+  },
+  "homepage": "https://github.com/InteractiveTimmy/js-amp/tree/master/packages/components#readme"
+}
